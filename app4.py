@@ -12,7 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from back4 import get_movie_details, get_similar_movies
 
-st.set_page_config(page_title="🎬 TMDB Movie Recommender", layout="centered")
+st.set_page_config(page_title="🎬 Movie Recommender System", layout="centered")
 
 with st.sidebar:
     st.header("⚙ Settings")
@@ -25,7 +25,7 @@ with st.sidebar:
 
     
 
-st.title("🎬 TMDB Smart Movie Recommender")
+st.title("🎬Movie Recommender System")
 st.caption("Get AI-powered movie recommendations using TMDB API + TF-IDF similarity")
 
 movie_name = st.text_input("Enter a movie name:", placeholder="e.g. Inception")
